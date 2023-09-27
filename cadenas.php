@@ -16,7 +16,7 @@
     echo $nombreMinuscula;
 
     echo "<br>";
-    $palabra = $_GET['y']; 
+    $palabra = $_GET['y'] ?? 'Marrama'; 
     echo $nombre . " " . $palabra;
     $prefijo = strpos($nombre, $palabra);
     echo "<br>" . $prefijo;
