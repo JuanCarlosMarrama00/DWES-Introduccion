@@ -1,7 +1,10 @@
 <?php 
      require('conexion.php');
      require('usuario.php');
- 
-     $borrarUsuario = $pdo->exec('DELETE usuario FROM usuario where nombre_usuario="pacopacon"');
-     echo "<p>Se han borrado $borrarUsuario usuarios.</p>"; 
+     
+     $id = $_GET['id_usuario'];
+     $borrarUsuario = $pdo->prepare('DELETE usuario FROM usuario where id_usuario=?');
+     $borrarUsuario->bindParam(1, $id);
+     $cuantos = $borrarUsuario->execute();
+     echo "<p>Se han borrado $cuantos usuarios.</p>"; 
 ?>
