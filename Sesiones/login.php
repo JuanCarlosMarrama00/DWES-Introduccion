@@ -43,7 +43,7 @@
         <?php 
             if(isset($errores)) {
                 foreach($errores as $error) {
-                    echo $error;
+                    echo $error . "<br>";
                 }
             }
         ?>

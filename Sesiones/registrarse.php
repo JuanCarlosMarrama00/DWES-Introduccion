@@ -50,7 +50,7 @@ if (isset($_POST["submit"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
     <?php
     if(isset($errores)) {
         foreach($errores as $error) {
-            echo $error;
+            echo $error . "<br>";
         }
     }
     ?>
