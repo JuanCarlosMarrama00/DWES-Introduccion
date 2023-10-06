@@ -9,6 +9,7 @@ function filtrado($datos)
 }
 
 if (isset($_POST["submit"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
+    
     if (empty($_POST["nombre"])) {
         $errores[] = "El nombre es requerido";
     }
