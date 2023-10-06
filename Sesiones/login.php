@@ -37,8 +37,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
+    <div id="pagina">
+    <h1>Formulario de login</h1>
+    <div id="formulario">
     <form action="login.php" method="post" enctype="multipart/form-data">
         <?php 
             if(isset($errores)) {
@@ -47,13 +51,14 @@
                 }
             }
         ?>
-        <h1>Formulario de login</h1>
         <p>Nombre de usuari@:</p>
         <input type="text" name="nombreUsuario" maxlength="50"><br>
         <p>Contraseña:</p>
         <input type="password" name="password"><br><br>
         <input type="submit" name="submit" value="Acceder"><br>
         <p>¿Todavía no eres miembro?<a href="registrarse.php">Registrarse</a></p>
+        </div>
     </form>
+    </div>
 </body>
 </html>

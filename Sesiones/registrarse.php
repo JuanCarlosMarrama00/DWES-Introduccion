@@ -43,9 +43,11 @@ if (isset($_POST["submit"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Pagina Registrarse php</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 
 <body>
+    <div id="pagina">
     <h1>Formulario de registro</h1>
     <?php
     if(isset($errores)) {
@@ -68,6 +70,7 @@ if (isset($_POST["submit"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
     </div>
     <p>¿Ya eres miembro?<a href="login.php">Acceso a usuari@s</a></p>
+    </div>
 </body>
 
 </html>
